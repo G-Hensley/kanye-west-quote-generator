@@ -11,7 +11,7 @@ def get_quote():
     # Delete the existing quote text
     canvas.delete(quote_text)
     # Create a new quote text
-    quote_text = canvas.create_text(150, 207, text=response.json()["quote"], width=250, font=("Arial", 18, "bold"), fill="white")
+    quote_text = canvas.create_text(150, 207, text=response.json()["quote"], width=250, font=("Arial", 18, "bold"), fill="black")
 
 # Create the window
 window = Tk()
@@ -24,7 +24,7 @@ canvas = Canvas(width=300, height=414)
 background_img = PhotoImage(file="background.png")
 canvas.create_image(150, 207, image=background_img)
 # Create the quote text
-quote_text = canvas.create_text(150, 207, text="Kanye Quote Goes HERE", width=250, font=("Arial", 20, "bold"), fill="white")
+quote_text = canvas.create_text(150, 207, text="Kanye Quote Goes HERE", width=250, font=("Arial", 20, "bold"), fill="black")
 canvas.grid(row=0, column=0)
     
 # Create the Kanye button
